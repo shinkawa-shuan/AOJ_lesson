@@ -3,7 +3,7 @@
 int main() {
     int r, c;
     scanf(" %d %d", &r, &c);
-    int table[101][101] = {};  // int table[r + 1][c + 1] = {};だとエラー
+    int table[r + 1][c + 1] = {{}};
     for (int i = 0; i < r; i++) {
         for (int j = 0; j < c; j++) {
             scanf(" %d", &table[i][j]);
